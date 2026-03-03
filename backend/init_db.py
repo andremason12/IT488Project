@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, text
 from models import Base
 
-engine = create_engine("sqlite:///store.db", echo=True)
+engine = create_engine("sqlite:///homestack.db", echo=True)
 
 # Enable foreign key enforcement for SQLite
 with engine.connect() as conn:
